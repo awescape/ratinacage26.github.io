@@ -194,7 +194,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 	background: rgba(33, 33, 33, 0.7);
 }
 
-}
+
 
 .logo{
 	width: 30%;
@@ -203,7 +203,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 }
 
 .menu{
-	width: 70%;
+	width: 50%;
 }
 
 .menu ul{
