@@ -58,7 +58,7 @@ $(function(){
 
 
 // ---------------------------------------------------
-//                      Click add class  Portfolio
+//                      Click add class 
 // ----------------------------------------------------- 
 
 
@@ -67,8 +67,23 @@ $(function(){
 //         $("branding").addClass("display");
 //     });
 // });
-//
 
+
+// ---------------------------------------------------
+//                      Click Hide Map
+// ----------------------------------------------------- 
+
+
+// $(document).ready(function(){
+//     $("#hide-map").click(function(){
+//         $("#hide-map").addClass("map-off");
+//     });
+// });
+
+
+// ---------------------------------------------------
+//                      Click Portfolio
+// ----------------------------------------------------- 
 
 $(function() {
 		var selectedClass = "";
@@ -153,16 +168,3 @@ $(function() {
 // }
 
 
-// ======= MAP ==========
-
-function initMap() {
-  var uluru = {lat:45.5417323 , lng:73.34 };
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
-    center: uluru
-  });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-}

@@ -161,6 +161,9 @@ section{
 	background: #1d282d;
 }
 
+
+
+
 :target:before {
 content:"";
 display:block;
@@ -178,8 +181,19 @@ margin:-5rem 0 0; /* negative fixed header height */
 	transition: 0.5s all ease;
 }
 
+.header-filled{
+	background-color: rgba(33, 33, 33);
+}
+
+.header-background-block{
+	width: 100%;
+	height: 145px;
+}
+
 .header:hover{
 	background: rgba(33, 33, 33, 0.7);
+}
+
 }
 
 .logo{
@@ -212,6 +226,8 @@ margin:-5rem 0 0; /* negative fixed header height */
 .menu ul a:hover{
 	color: white;
 }
+
+
 
 
 /*  ---------------------------------------------------
@@ -732,8 +748,17 @@ footer {
 	flex-direction: row;
 }
 
+.map{
+	width: 100%; 
+	height: 450px; 
+}
 
-#map {
-  height: 400px;
-  width: 100%;
- }
+.map-ff{
+	display: none;
+}
+
+.hide-map-button{
+	background-color: #FFF;
+	margin: -2rem 0 2rem 0;
+}
+
