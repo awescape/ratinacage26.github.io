@@ -380,7 +380,9 @@ margin:-5rem 0 0; /* negative fixed header height */
 /*  ---------------------------------------------------
                      Services
 -----------------------------------------------------  */
-
+.services{
+	background: #FFF;
+}
 .services-icon-wrapper{
 	display: flex;
 	flex-direction: row;
@@ -390,7 +392,8 @@ margin:-5rem 0 0; /* negative fixed header height */
 
 
 .services-title span{
-	background: #1d282d;
+	/* background: #1d282d; */
+	background: #FFF;
 }
 
 /* switching images start */
@@ -627,6 +630,7 @@ footer {
 	transition: all 0.2s;
 	transform: scale(1.2);
 	margin: 0 15px;
+	text-align: center;
 }
 .social-item a:hover i {
 	/* color: rgba(236, 58, 128, 1.0); */
@@ -654,7 +658,9 @@ footer {
 /*  ---------------------------------------------------
                      Our Clients
 -----------------------------------------------------  */
-
+.clients-section{
+	background: #1d282d;
+}
 
 .clients-title span{
 	background: #1d282d;
@@ -743,9 +749,12 @@ footer {
 	flex-basis: 100%;
 }
 
-.contact-types.wrapper{
+.contact-types-wrapper{
 	display: flex;
 	flex-direction: row;
+	width: 100%;
+	justify-content: space-around;
+	padding: 3rem 0 8rem 0;
 }
 
 .map{
@@ -762,3 +771,60 @@ footer {
 	margin: -2rem 0 2rem 0;
 }
 
+.block{
+	position: relative;
+}
+
+.block h3::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #dba64d;
+    top: 54px;
+    left: 0px;
+    width: 100%;
+}
+
+.social-media-wrapper{
+	display: flex;
+	flex-direction: row;
+	align-content: center;
+}
+
+.block-social .social-list{
+	margin-top: 1.2rem;
+}
+
+
+/*  ---------------------------------------------------
+                     Form
+-----------------------------------------------------  */
+
+.write-section{
+	color: #FFF;
+	text-align: center;
+}
+
+.write-section{
+	background: #15ad9e;
+}
+
+.form-first-row{
+	margin: 0 auto;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+input{
+	flex-grow: 1;
+	margin: 0 2rem 2rem 0;
+}
+.form-first-row input:last-child {
+    margin-right: 0;
+}
+
+textarea{
+	width: 80%;
+}

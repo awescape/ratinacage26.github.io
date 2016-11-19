@@ -49,6 +49,7 @@
 ----------------------------------------------------- -->
 
 		<section id="contact-us" class="contact-us">
+
 			<div class="contact-us-message message">
 				<div class="title-wrap">	
 					<h2 class="contact-us-title title"><span>Contact Us</span></h2>
@@ -59,37 +60,61 @@
 
 
 			<iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.426536489535!2d-73.63870038406313!3d45.54174447910197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9191e3be35c63%3A0xc181569dd7240f52!2s8484+Avenue+Casgrain%2C+Montr%C3%A9al%2C+QC+H2P+2K8!5e0!3m2!1sen!2sca!4v1479433565890" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-		
-
 		
 				<p id="hide-map" class="hide-map-button button">Hide Map</p>	
 			</div>
 
+
+
 			<div class="contact-types-wrapper">
-				<div class="block">.
+				<div class="block">
 					<h3 class="block-title">ADDRESS</h3>
-					<p class="block-information">8484 Ave. Casgrain, Montreal, QC, H2P 2K8</p>
+					<p class="block-information">8484 Ave. Casgrain,</p>
+					<p class="block-information">Montreal, QC, H2P 2K8</p>
 				</div><!-- /.block -->
 
 				<div class="block">
 					<h3 class="block-title">CALL US</h3>
-					<p class="block-information">Office: (514) 5547087 Support: (111) 5547087</p>
+					<p class="block-information">Office: (514) 5547087</p> 
+					<p class="block-information">Support: (111) 5547087</p>
 				</div><!-- /.block -->
 
 				<div class="block">
 					<h3 class="block-title">EMAIL US</h3>
-					<p class="block-information">help@funfun.com helmeplease@funfun.com</p>
+					<p class="block-information">help@funfun.com</p>
+					<p class="block-information">helmeplease@funfun.com</p>
 				</div><!-- /.block -->
 
-				<div class="block">
-					<h3 class="block-title">EMAIL US</h3>
+				<div class="block block-social">
+					<h3 class="block-title">STAY SOCIAL</h3>
 					<div class="social-media-wrapper">
-						<img src="images/twitter.svg" alt="twitter icon">
-						<img src="images/facebook.svg" alt="facebook icon">
-						<img src="images/ball.png" alt="ball icon">
-						<img src="images/linkedin.svg" alt="LinkinIn icon">
-					</div> <!-- /.social-media-wrapper -->
+							<ul class="social-list">
+								<li class="social-item">
+									<a href="#">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+										<span class="sr-only">Facebook</span>
+									</a>
+								</li>
+								<li class="social-item">
+									<a href="#">
+										<i class="fa fa-linkedin" aria-hidden="true"></i>
+										<span class="sr-only">LinkedIn</span>
+									</a>
+								</li>
+								<li class="social-item">
+									<a href="#">
+										<i class="fa fa-twitter" aria-hidden="true"></i>
+										<span class="sr-only">Twitter</span>
+									</a>
+								</li>
+								<li class="social-item">
+									<a href="#">
+										<i class="fa fa-codepen" aria-hidden="true"></i>
+										<span class="sr-only">Codepen</span>
+									</a>
+								</li>
+							</ul>
+					</div>
 				</div><!-- /.block -->
 			</div> <!-- /.contact-types-wrapper -->
 		</section> <!-- /.contact-us -->
@@ -98,9 +123,28 @@
                      Write to us
 ----------------------------------------------------- -->
 		<section id="write-section" class="write-section">
-			<div class="write-form">
-				<h1>Put a form here please!</h1>
-			</div> <!-- /.write-wrapper -->	
+
+			<h3>Write to us</h3>
+	
+			<form action="http://www.focuspocus.io/magic/vincent.power@gmail.com" method="POST" enctype="multipart/form-data">
+				<div class="form-first-row">
+					<input type="text" name="first-name" placeholder="Full Name">
+					<input type="mail" name="email" placeholder="Your Email Address">
+					<input type="text" name="first-name" placeholder="Subject">
+				</div>
+				<div class="form-second-row">
+					<textarea name="message" cols="30" rows="10" placeholder="Speak to us..."></textarea>				
+				</div>
+
+
+
+				<!-- <label for="fullNname">Filename:</label>
+				<input type="text" name="Full Name" id="fullName">
+				<label for="attachment">Filename:</label>
+				<input type="file" name="attachment" id="attachment"/> -->
+				<input type="submit" value="Send">
+			</form>
+		
 		</section> <!-- /.write-section -->		
 	</div> <!-- /.wrapper -->
 
