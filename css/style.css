@@ -235,7 +235,8 @@ margin:-5rem 0 0; /* negative fixed header height */
 -----------------------------------------------------  */
 
 .welcome{
-	background: rgb(33, 33, 33)  url("../images/cityscape-dark.jpg") repeat right top;
+	background: rgb(33, 33, 33)  url("../images/cityscape-dark.jpg") repeat top center;
+	background-size: cover;
 	/* background: linear-gradient(to bottom,#15ad9e, #156e65); */
 	min-height: 100vh;
 	color: white;
@@ -259,6 +260,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 }
 .get-started{
 	color: #15ad9e;
+	background-color: rgba(0,0,0,0.3);
 }
 
 /* switching images start */
@@ -381,19 +383,22 @@ margin:-5rem 0 0; /* negative fixed header height */
                      Services
 -----------------------------------------------------  */
 .services{
-	background: #FFF;
 }
 .services-icon-wrapper{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 5rem 0 5rem 0;
+	margin: 7rem 0 5rem 0;
+	flex-wrap: wrap;
 }
 
+.services-message{
+	margin: 5rem 0;
+}
 
 .services-title span{
-	/* background: #1d282d; */
-	background: #FFF;
+	background: #1d282d;
+/* 	background: #FFF; */
 }
 
 /* switching images start */
@@ -404,6 +409,10 @@ margin:-5rem 0 0; /* negative fixed header height */
 /* .text-hover{
 	transition: color 0.7s;
 } */
+
+.icon{
+	margin: 0 1rem;
+}
 
 .icon div{
 	max-height: 66px;
@@ -697,7 +706,7 @@ footer {
 	color: #1d282d;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 9rem;
+	padding-bottom: 5rem;
 }
 
 .like-section h2{
@@ -823,8 +832,34 @@ input{
 }
 .form-first-row input:last-child {
     margin-right: 0;
+\
 }
 
 textarea{
 	width: 80%;
+}
+
+
+/* ======== Footer section ==============*/
+
+
+.site-footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+
+.copyright{
+	color:rgb(160,160,160);
+	padding: 0 2rem;
+	display: inline-block;
+}
+
+.site-footer .social-media-wrapper{
+	padding: 0 2rem;
+}
+
+.site-footer .social-list{
 }
