@@ -568,7 +568,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 	flex-direction: row;
 	justify-content: center;
 	list-style-type: none;
-	margin: 0 auto 5rem auto;
+	margin: 0 auto;
 	width: 80%;
 	align-items: baseline;
 	padding-bottom: 8rem;
