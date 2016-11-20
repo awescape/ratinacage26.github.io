@@ -913,6 +913,10 @@ textarea{
     text-align: center;
 	}
 
+	.services-message {
+    margin: 0;
+}
+
 
 	/*  ---------------   About us   -------------------------- */
 	.proceedure-wrapper{
