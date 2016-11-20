@@ -182,12 +182,13 @@ margin:-5rem 0 0; /* negative fixed header height */
 }
 
 .header-filled{
-	background-color: rgba(33, 33, 33);
+	background-color: rgb(33, 33, 33);
 }
 
 .header-background-block{
 	width: 100%;
 	height: 145px;
+	transition: 0.35s all ease;
 }
 
 .header:hover{
@@ -885,31 +886,36 @@ textarea{
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
-/*  ---------------   Form   --------------------------  */
+	.message {
+    padding: 4rem 10% 2rem 10%;
+    text-align: center;
+	}
+	
+	/*  ---------------   Form   --------------------------  */
 
-.work-buttons ul {
-    flex-direction: column;
-	justify-content: center;
+	.work-buttons ul {
+	    flex-direction: column;
+		justify-content: center;
 
-}
+	}
 
-/*  ---------------   Contact Us  --------------------------  */
-.contact-types-wrapper{
-	flex-direction: column;
-	text-align: center;
-}
-
-
-.block h3::after {
-    width: 24%;
-    margin: 0 auto;
-    left: 38%;
-}
+	/*  ---------------   Contact Us  --------------------------  */
+	.contact-types-wrapper{
+		flex-direction: column;
+		text-align: center;
+	}
 
 
-.block {
-    margin: 1rem 0;
-}
+	.block h3::after {
+	    width: 24%;
+	    margin: 0 auto;
+	    left: 38%;
+	}
+
+
+	.block {
+	    margin: 1rem 0;
+	}
 
 /*  ---------------------------------------------------
                      MEDIA QUERY 768px
@@ -918,7 +924,10 @@ textarea{
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
-
+	body{
+		font-size: 1.5rem;
+	}
+	
 }
 
 
