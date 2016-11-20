@@ -78,7 +78,7 @@ section{
 
 /* -----   Message ----------*/
 .message{
-	padding: 4rem 30% 2rem 30%;
+	padding: 4rem 15% 2rem 15%;
 	text-align: center;
 }
 
@@ -97,7 +97,7 @@ section{
   border-bottom: 1px solid #dba64d;
     top: 23px;
     left: 0px;
-    width: 285px;
+    width: 500px;
 }
 
 .title::after {
@@ -106,7 +106,7 @@ section{
   border-bottom: 1px solid #dba64d;
     top: 23px;
     right: 0px;
-    width: 285px;
+    width: 500px;
 }
 
 /* -------- FOOTER ------  */
@@ -519,20 +519,23 @@ margin:-5rem 0 0; /* negative fixed header height */
 /* Folio ----------------------------------- */
 
 .folio-list {
-	display: flex;
+	display: inline-block;
 	flex-wrap: wrap;
 	justify-content: center;
 	display: none;
+	flex-direction: row;
+	padding: 0rem 15% 0rem 15%;
 }
 
 .folio-list li {
-	margin-bottom: 1.2rem;
+	margin: 0 auto 1.2rem auto;
+	justify-content: center;
 }
 .folio-list li figure {
 	position: relative;
 }
 .folio-list img {
-	display: block; 
+/* 	display: block;  */
 	width: 100%; 
 }
 .folio-list li figcaption {
@@ -624,6 +627,10 @@ margin:-5rem 0 0; /* negative fixed header height */
 .join-team .apply{
 	width: 220px;
 	justify-content: space-between;
+}
+
+.join-team h2{
+	margin-bottom: 4.8rem;
 }
 
 
@@ -731,19 +738,22 @@ footer {
 .like-message{
 	display: flex;
 	justify-content: center;
-	padding: 3rem 30% 1rem 30%;
+	padding:0rem 2rem;
+}
+
+.like-wrapper p{
+	padding: 0rem 2rem;
+ 	text-align: center;
 }
 
 .like-wrapper{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
+	margin-top: 3rem;	
 }
 
-.like-wrapper p{
- 	text-align: center;
-}
 
 .buy-theme{
 	margin: 2rem 0 2rem 0;
@@ -773,6 +783,10 @@ footer {
 	color: black;
 }
 
+.our-team-text{
+	margin-bottom: 3rem;
+}
+
 .title-wrap{
 	flex-basis: 100%;
 }
@@ -782,21 +796,21 @@ footer {
 	flex-direction: row;
 	width: 100%;
 	justify-content: space-around;
-	padding: 3rem 0 8rem 0;
+	padding: 2rem 0 5rem 0;
 }
 
 .map{
 	width: 100%; 
-	height: 450px; 
+	height: 450px;
+	/* display: none; */ 
+	transition: 0.7s ease;
 }
 
-.map-ff{
-	display: none;
-}
 
 .hide-map-button{
 	background-color: #FFF;
 	margin: -2rem 0 2rem 0;
+	z-index: 30;
 }
 
 .block{
@@ -823,6 +837,11 @@ footer {
 	margin-top: 1.2rem;
 }
 
+.block-social .social-item a:hover i {
+	color: #15ad9e;
+	box-shadow: -0px -0px 0px 1px #15ad9e;
+}
+
 
 /*  ---------------------------------------------------
                      Form
@@ -832,10 +851,11 @@ footer {
 	color: #FFF;
 	text-align: center;
 	padding:  3rem 0;
+	background: #15ad9e;
 }
 
-.write-section{
-	background: #15ad9e;
+.write-section h2{
+	font-size: 2.5rem;
 }
 
 .form-first-row{
@@ -913,8 +933,9 @@ textarea{
     text-align: center;
 	}
 
-	.services-message {
+	.services-message.message{
     margin: 0;
+    padding-top: 2rem;
 }
 
 
@@ -979,6 +1000,10 @@ textarea{
 		min-height: 0px;
 		align-content: center;
 	}
+	
+	.header-content.content-wrapper{
+	/* 	padding-bottom: 1rem; */
+	}
 
 	.scrolled{
 		min-height: 0px;
@@ -995,6 +1020,7 @@ textarea{
 
 	.menu{
 		width: 100%;
+		padding: 1rem 0;
 	}
 	
 	.site-footer{
@@ -1002,8 +1028,15 @@ textarea{
 	}
 
 	.message{
-		padding-top: 8rem;
+		padding-top: 10rem;
 	}
+
+	.title::before {
+    top: 34px;
+}
+	.title::after {
+    top: 34px;
+}
 
 	/*  ---------------   homepage  ---------------------  */
 	.icon{
