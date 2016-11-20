@@ -57,6 +57,7 @@ ul {
 	border: 2px solid #15ad9e;
 	font-size: 1.5rem;
 	padding: 1rem;
+	color: #15ad9e;
 }
 .button:hover{
 	border-color:#faa541;
@@ -182,19 +183,23 @@ margin:-5rem 0 0; /* negative fixed header height */
 }
 
 .header-filled{
-	background-color: rgb(33, 33, 33);
+	background-color: rgba(33, 33, 33, 0.7);
 }
 
 .header-background-block{
 	width: 100%;
 	height: 145px;
 	transition: 0.35s all ease;
+	background-color: #FFF
 }
 
 .header:hover{
 	background: rgba(33, 33, 33, 0.7);
 }
 
+.header-filled:hover{
+	background: rgba(33, 33, 33, 1);
+}
 
 
 .logo{
@@ -222,6 +227,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 .menu ul a{
 	text-decoration: none;
 	color:#15ad9e;
+	font-size: 1.3rem;
 }
 
 .menu ul a:hover{
@@ -354,7 +360,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 
 .proceedure-wrapper{
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	flex-direction: row;
 	justify-content: center;
 	list-style-type: none;
@@ -446,6 +452,7 @@ margin:-5rem 0 0; /* negative fixed header height */
 
 .our-work{
 	background: white;
+	color: black;
 }
 
 
@@ -486,7 +493,6 @@ margin:-5rem 0 0; /* negative fixed header height */
 }
 .our-work-button:hover{
 	border-color:#faa541;
-	color: black;
 }
 
 /* .folio ul{
@@ -764,6 +770,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	color: black;
 }
 
 .title-wrap{
@@ -852,6 +859,20 @@ textarea{
 	width: 80%;
 }
 
+.send-button{
+	margin: 2rem 0 2rem 0;
+	color: #faa541;
+	background-color: #1d282d;
+	border: none;
+	transition: 0.7s ease;
+	padding: 1rem 2rem;
+}
+
+.send-button:hover{
+	background-color: #faa541;
+	color: #1d282d;
+}
+
 /*  ---------------------------------------------------
                      Footer section
 -----------------------------------------------------  */
@@ -892,7 +913,15 @@ textarea{
     text-align: center;
 	}
 
-	/*  ---------------   Form   --------------------------  */
+
+	/*  ---------------   About us   -------------------------- */
+	.proceedure-wrapper{
+		flex-wrap: wrap;
+	}
+
+
+
+	/*  ---------------   Form   -------------------------- */
 
 	.work-buttons ul {
 	    flex-direction: column;
@@ -941,12 +970,23 @@ textarea{
 	}
 
 	.header-content{
-
 		flex-direction: column;
 		justify-content: center;
+		min-height: 0px;
+		align-content: center;
 	}
+
+	.scrolled{
+		min-height: 0px;
+	}
+
+	.header-background-block{
+	display: none;
+}
+
+
 	.logo{
-		margin: 1rem;
+		/* margin: 1rem; */
 	}
 
 	.menu{
@@ -955,6 +995,10 @@ textarea{
 	
 	.site-footer{
 		font-size: 1rem;
+	}
+
+	.message{
+		padding-top: 8rem;
 	}
 
 	/*  ---------------   homepage  ---------------------  */
@@ -999,6 +1043,9 @@ textarea{
 		display: none;
 	}
 
+	.menu{
+		padding: 1rem 0;
+	}
 
 
 
