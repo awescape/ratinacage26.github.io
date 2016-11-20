@@ -628,6 +628,7 @@ footer {
 .social-list {
 	display: flex;
 	justify-content: space-around;
+	font-size: 1rem;
 }
 .social-item {
 	display: flex;
@@ -845,7 +846,6 @@ input{
 }
 .form-first-row input:last-child {
     margin-right: 0;
-\
 }
 
 textarea{
@@ -868,6 +868,7 @@ textarea{
 	color:rgb(160,160,160);
 	padding: 0 2rem;
 	display: inline-block;
+	text-align: center;
 }
 
 .site-footer .social-media-wrapper{
@@ -890,7 +891,7 @@ textarea{
     padding: 4rem 10% 2rem 10%;
     text-align: center;
 	}
-	
+
 	/*  ---------------   Form   --------------------------  */
 
 	.work-buttons ul {
@@ -907,11 +908,18 @@ textarea{
 
 
 	.block h3::after {
-	    width: 24%;
-	    margin: 0 auto;
-	    left: 38%;
+	    width: 40%;
+    margin: 0 auto;
+    left: 30%;
+    top: 34%;
 	}
 
+	.block-social h3::after {
+	width: 40%;
+    margin: 0 auto;
+    left: 30%;
+    top: 50%;
+	}
 
 	.block {
 	    margin: 1rem 0;
@@ -927,7 +935,43 @@ textarea{
 	body{
 		font-size: 1.5rem;
 	}
+
+	h1 {
+    font-size: 4em;
+	}
+
+	.header-content{
+
+		flex-direction: column;
+		justify-content: center;
+	}
+	.logo{
+		margin: 1rem;
+	}
+
+	.menu{
+		width: 100%;
+	}
 	
+	.site-footer{
+		font-size: 1rem;
+	}
+
+	/*  ---------------   homepage  ---------------------  */
+	.icon{
+		padding: 2rem 4rem;
+	}
+
+	/*  ---------------   Contact us  ---------------------  */
+	.form-first-row input{
+    margin-right: 0;
+	}
+
+	.form-first-row {
+		flex-direction: column;
+	}
+
+
 }
 
 
@@ -938,6 +982,35 @@ textarea{
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+	
+	h1 {
+    font-size: 3em;
+	}
 
+	.site-footer{
+	flex-direction: column-reverse;
+	}
+
+	.site-footer .social-media-wrapper {
+    padding: 2rem 2rem 1rem 2rem;
+	}
+	
+	.logo{
+		display: none;
+	}
+
+
+
+
+
+
+
+	/*  ---------------   homepage  ---------------------  */
+
+	.services-message {
+    margin: 5rem 0 0 0;
+	}
+
+	
 
 }
