@@ -97,7 +97,7 @@ section{
   border-bottom: 1px solid #dba64d;
     top: 23px;
     left: 0px;
-    width: 500px;
+    width: 80%;
 }
 
 .title::after {
@@ -106,7 +106,7 @@ section{
   border-bottom: 1px solid #dba64d;
     top: 23px;
     right: 0px;
-    width: 500px;
+    width: 80%;
 }
 
 /* -------- FOOTER ------  */
